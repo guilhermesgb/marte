@@ -1,0 +1,19 @@
+<section class="blog" id="news">
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-12"><h1>Informes e Novidades</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 posts-list">
+                {{ range first 5 (where .Data.Pages "Section" "news") }}
+                    <article>
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-xs-12"><h3><a href="{{ .Site.BaseURL }}/blog/">Ver Tudo</a></h3></div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+title = "MARTE"
+baseURL = "http://mostramarte.com/"
+languageCode = "pt-BR"
+config = "config.toml"
+theme = "osprey"
+canonifyURLS = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[Params]
+    tagline = "Mostra de Artes Teatrais Integradas"
+    eventinfo = "7 a 14 de outubro. Joao Pessoa - PB"
+    author = "Guilherme Baptista"
+    description = "Website da MARTE - Mostra de Artes Teatrais Integradas"
+    logoBig = "/images/logo-alt.png"
+    logoSmall = "/images/logo-alt-black.png"
+    favicon = "favicon.ico"
+    opengraphImage = "/images/logo.png"
+    copyright = true
+    credit = true
+    customCSS = false
+    cacheBustCSS = false
+    cacheBustJS = false
+
+[[menu.main]]
+    name = "A Mostra"
+    url  = "/#about"
+    weight = 1
+[[menu.main]]
+    name = "Roteiro"
+    url  = "/#schedule"
+    weight = 2
+[[menu.main]]
+    name = "Eixos"
+    url  = "/#axes"
+    weight = 3
+[[menu.main]]
+    name = "Informes"
+    url = "/#news"
+    weight = 4
+[[menu.main]]
+    name = "Local"
+    url = "/#location"
+    weight = 5
