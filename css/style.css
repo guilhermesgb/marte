@@ -134,7 +134,7 @@ body{
 .content_inner{
 	padding:50px 0;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Primary', 'Roboto', sans-serif;
 	position:relative;
 }
 .content_inner h1 a{
@@ -144,7 +144,7 @@ body{
 	padding-bottom:14px;
 }
 .content_inner span a{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Accent', 'Roboto', sans-serif;
 	color:#ffffff;
 	background-color:#222; /*009175;*/
 	display: inline-block;
