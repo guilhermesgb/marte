@@ -82,7 +82,7 @@ body{
 	position:relative;
 }
 .content_top.backgrounded_alt{
-	background:url('/images/background-alt.jpg');
+	background:url('../images/background-alt.jpg');
 }
 /*.content_top:after{
 	content: '';
@@ -411,7 +411,7 @@ body{
 .copy-right{
 	text-align:center;
 	padding:1em;
-	background: url("/images/background.jpg");
+	background: url("../images/background.jpg");
 }
 .copy-right p{
 	font-size: 1em;
@@ -899,9 +899,9 @@ body{
 }
 @font-face {
     font-family: 'Primary'; /*a name to be used later*/
-    src: url('/fonts/opensans-regular.ttf'); /*URL to font*/
+    src: url('../fonts/opensans-regular.ttf'); /*URL to font*/
 }
 @font-face {
     font-family: 'Accent'; /*a name to be used later*/
-    src: url('/fonts/din-bold.ttf'); /*URL to font*/
+    src: url('../fonts/din-bold.ttf'); /*URL to font*/
 }
