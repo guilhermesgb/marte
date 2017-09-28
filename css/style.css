@@ -399,8 +399,18 @@ body{
 	-webkit-transition: 0.5s ease;
 	text-transform:uppercase;
 }
+.footer-grid ul li img{
+  padding:15px 0px;
+  margin-bottom: 10px;
+}
 .footer-grid ul li a:hover{
 	color:#62f40b; /*005F4D;*/
+}
+.footer-grid.footer-lastgrid{
+	width:40%;
+}
+.footer-grid.inner-lastgrid{
+	width:30%;
 }
 .footer-lastgrid{
 	margin:0;
@@ -785,7 +795,7 @@ body{
 	.testmonials{
 		padding:0 0 30px 0;
 	}
-	.footer-grid{
+	.footer-grid:not(.inner-lastgrid){
 		float:none;
 		width:94%;
 		padding:3%;
