@@ -5,6 +5,7 @@ ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
+
 /* start editing from here */
 a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */
@@ -54,6 +55,17 @@ body{
 	float: left;
 	padding:12px 0;
 }
+.logo a img{
+  width: transparent;
+}
+.logo.logo_big{
+  visibility: visible;
+  display: block;
+}
+.logo.logo_small{
+  visibility: hidden;
+  display: none;
+}
 .top-nav{
 	float:right;
 }
@@ -68,16 +80,23 @@ body{
 	display: block;
 	position: relative;
 	text-transform: uppercase;
-	transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
+	transition-duration: 0.5s;
+  transition-timing-function: ease;
+	-o-transition-duration: 0.5s;
+  -o-transition-timing-function: ease;
+	-webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
 	font-size: 0.875em;
 	position:relative;
 }
 .top-nav li.active a, .top-nav li a:hover {
 	color:#FFF;
   text-shadow: #222 1px 2px;
-	background:#62f40b; /*00B895;*/
+	background-color: #62f40b; /*00B895;*/
+  background-color: -webkit-linear-gradient(-180deg, #62f40b, #06DD01); /* For Safari 5.1 to 6.0 */
+  background-color: -o-linear-gradient(-180deg, #62f40b, #06DD01); /* For Opera 11.1 to 12.0 */
+  background-color: -moz-linear-gradient(-180deg, #62f40b, #06DD01); /* For Firefox 3.6 to 15 */
+  background-color: linear-gradient(-180deg, #62f40b, #06DD01); /* Standard syntax */
 }
 /*---start-content----*/
 .content {
@@ -87,7 +106,8 @@ body{
 	padding:50px 0;
 	text-align: center;
 	font-family: 'Primary', 'Roboto', sans-serif;
-	position:relative;
+  z-index:750;
+  position:relative;
 }
 .content_top.backgrounded_alt{
 	background:url('../images/background-alt.jpg');
@@ -111,6 +131,8 @@ body{
 	color: #62f40b;
   text-shadow: #404146 1px 2px;
 	padding-bottom:14px;
+  z-index:750;
+  position:relative;
 }
 .content_top span a{
 	font-family: 'Primary', 'Roboto', sans-serif;
@@ -133,11 +155,13 @@ body{
 	color: #fff;
 	margin-bottom: 24px;
 	margin: 14px 0px 24px 0px;
+  z-index:750;
+  position:relative;
 }
 .content_top p b{
   font-size: 1.2em;
-  font-style: oblique;
   color: #62f40b;
+  font-family: 'Accent';
 }
 .content_inner{
 	padding:50px 0;
@@ -156,6 +180,8 @@ body{
   font-family: 'Accent';
 	color: #fff;
 	padding-bottom:14px;
+  z-index:750;
+  position:relative;
 }
 .content_inner span a{
 	font-family: 'Accent', 'Roboto', sans-serif;
@@ -168,6 +194,8 @@ body{
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
+  z-index:750;
+  position:relative;
 }
 .content_inner span a:hover{
 	background:#62f40b;
@@ -178,22 +206,30 @@ body{
 	color: #fff;
 	margin-bottom: 24px;
 	margin: 14px 0px 24px 0px;
+  z-index:750;
+  position:relative;
 }
 .content_inner p b{
   font-size: 1.2em;
-  font-style: oblique;
+  font-family: 'Accent';
   color: #62f40b;
   margin-bottom: 0px;
+  z-index:750;
+  position:relative;
 }
 .content_inner b p{
   font-size: 1.2em;
   font-style: oblique;
   font-family: 'Accent';
   color: #62f40b;
+  z-index:750;
+  position:relative;
 }
 .content_inner iframe{
   width: 80%;
   height: 400px;
+  z-index:750;
+  position:relative;
 }
 .content-grids {
 	padding:50px 0;
@@ -270,6 +306,7 @@ body{
 	left:50%;
 	top:0px;
 	margin-left: -10px;
+  z-index:750;
 }
 .specials.backgrounded_alt:after{
 	border:20px solid transparent;
@@ -281,6 +318,8 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 	background:url(../images/bg-h2.png) repeat-x center;
+  z-index:750;
+  position:relative;
 }
 /*----special-grid------*/
 .special-grid {
@@ -291,6 +330,8 @@ body{
 }
 .special-grid img{
 	width:100%;
+  z-index:750;
+  position:relative;
 }
 .special-grid a{
 	text-transform: uppercase;
@@ -302,6 +343,8 @@ body{
 	-webkit-transition: 0.5s ease;
 	padding: 0.3em 0;
 	display: block;
+  z-index:750;
+  position:relative;
 }
 .special-grid p a{
   	font-family: 'Primary', 'Roboto', sans-serif;
@@ -374,6 +417,7 @@ body{
   background: linear-gradient(-90deg, #404146, #222); /* Standard syntax */
 	padding: 50px 0;
 	position:relative;
+  z-index:750;
 }
 .footer:after{
 	content: '';
@@ -451,16 +495,20 @@ body{
 	background: url("../images/background.jpg");
 }
 .copy-right p{
-	font-size: 1em;
+	font-size: 0.75em;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Accent', 'Roboto', sans-serif;
+  z-index:750;
+  position:relative;
 }
 .copy-right p a{
 	color: #cbe86b;
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
+  z-index:750;
+  position: relative;
 }
 .copy-right p a:hover{
 	color:#62f40b;
@@ -725,6 +773,14 @@ body{
 .company_address p span:hover{
 	color:#00B895;
 }
+.overlay{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-image: url('../images/overlay.png');
+  background-repeat: repeat;
+  z-index: 500;
+}
 /*----responsive-design-----*/
 @media only screen and (max-width: 1366px) and (min-width: 1280px) {
 	.wrap{
@@ -749,7 +805,7 @@ body{
 		width:95%;
 	}
 	.top-nav ul li a{
-		padding:40px 15px;
+		padding:40px 10px;
 	}
 	.grid{
 		width:26.8%;
@@ -777,8 +833,16 @@ body{
 	.wrap{
 		width:95%;
 	}
+  .logo.logo_big{
+    visibility: hidden;
+    display: none;
+  }
+  .logo.logo_small{
+    visibility: visible;
+    display: block;
+  }
 	.top-nav ul li a{
-		padding:41px 5px;
+		padding:25px 5px;
 		font-size:0.75em;
 	}
 	.grid{
@@ -790,12 +854,22 @@ body{
 	.content_top{
 		padding:10px 0;
 	}
+  .content_top h1 a{
+    font-size: 1.2em;
+  }
   .content_inner{
 		padding:10px 0;
 	}
 	.content_inner:after{
 		top:-10px;
 	}
+  .content_inner h1 a{
+    font-size: 1.2em;
+  }
+  .content_inner h1 a:after{
+    content: "";
+    margin-bottom: 10px;
+  }
 	.special-grid{
 		float:none;
 		width:94%;
@@ -854,6 +928,9 @@ body{
    .contact-form input[type="text"],.contact-form textarea{
 		width:97%;
 	}
+  .overlay{
+    background-image: url('../images/overlay2.png');
+  }
 }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
@@ -866,6 +943,14 @@ body{
 		text-align:center;
 		padding:5px 0;
 	}
+  .logo.logo_big{
+    visibility: hidden;
+    display: none;
+  }
+  .logo.logo_small{
+    visibility: visible;
+    display: block;
+  }
 	.span_2_of_3 {
 		width:90%;
 		padding:5%;
@@ -953,4 +1038,8 @@ img.map_pin{
   height:13px;
   padding-right:5px;
   padding-left:5px;
+}
+.image_slider{
+  z-index:750;
+  position:relative;
 }
