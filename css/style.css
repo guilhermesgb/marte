@@ -145,6 +145,12 @@ body{
 	font-family: 'Primary', 'Roboto', sans-serif;
 	position:relative;
 }
+.content_inner.close_to_map_viewport{
+  padding-bottom:0px;
+}
+.content_inner.close_to_map_headline{
+  padding-top:0px;
+}
 .content_inner h1 a{
 	font-size:3em;
   font-family: 'Accent';
@@ -184,6 +190,10 @@ body{
   font-style: oblique;
   font-family: 'Accent';
   color: #62f40b;
+}
+.content_inner iframe{
+  width: 80%;
+  height: 400px;
 }
 .content-grids {
 	padding:50px 0;
@@ -307,11 +317,20 @@ body{
 	padding: 0em 1em 1em 1em;
 	line-height: 1.5em;
 }
+.special-grid.kinda_half{
+  width:40%;
+}
+.special-grid.a_fourth{
+  width:8%;
+}
 .spe-grid{
 	margin: 0px;
 }
+.spe-placeholder{
+  visibility:hidden;
+}
 .specials-grids {
-	padding: 50px 0;
+	padding-top: 50px 0;
 }
 /*----start-testmonial-grid----*/
 .testmonials{
@@ -771,9 +790,6 @@ body{
 	.content_top{
 		padding:10px 0;
 	}
-/*	.content_top:after{
-		top:-10px;
-	}*/
   .content_inner{
 		padding:10px 0;
 	}
@@ -786,11 +802,20 @@ body{
 		padding:3%;
 		margin-right:0;
 	}
+  .special-grid.kinda_half{
+    width:94%;
+  }
+  .special-grid.a_fourth{
+    width:94%;
+  }
 	.specials{
 		padding:30px 0 0 0;
 	}
+  .spe-placeholder{
+    display:none;
+  }
 	.specials-grids{
-		padding:10px 0;
+		padding-top:10px 0;
 	}
 	.testmonials{
 		padding:0 0 30px 0;
@@ -922,4 +947,10 @@ body{
 @font-face {
     font-family: 'Accent'; /*a name to be used later*/
     src: url('../fonts/din-bold.ttf'); /*URL to font*/
+}
+img.map_pin{
+  width:13px;
+  height:13px;
+  padding-right:5px;
+  padding-left:5px;
 }
