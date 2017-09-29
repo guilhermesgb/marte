@@ -793,6 +793,14 @@ body{
   background-repeat: repeat;
   z-index: 500;
 }
+.corpo_tecnico_big{
+  display: block;
+  visibility: visible;
+}
+.corpo_tecnico_small{
+  display: none;
+  visibility: hidden;
+}
 /*----responsive-design-----*/
 @media only screen and (max-width: 1366px) and (min-width: 1280px) {
 	.wrap{
@@ -949,7 +957,7 @@ body{
 		width:94%;
 		padding:3%;
 	}
-   .contact-form input[type="text"],.contact-form textarea{
+  .contact-form input[type="text"],.contact-form textarea{
 		width:97%;
 	}
   .overlay{
@@ -957,6 +965,14 @@ body{
   }
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.75em;
+  }
+  .corpo_tecnico_big{
+    display: none;
+    visibility: hidden;
+  }
+  .corpo_tecnico_small{
+    display: block;
+    visibility: visible;
   }
 }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
