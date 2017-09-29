@@ -24,7 +24,7 @@ img{max-width:100%;}
 /****end reset*****/
 body{
  	font-family:'Primary', Arial, Helvetica, sans-serif;
-  background: #40414699;
+  background: rgba(64, 65, 50, 0.5625); /*#40414699;*/
 }
 .wrap{
 	width:80%;
