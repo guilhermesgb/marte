@@ -71,7 +71,17 @@ $(window.document).ready(function(){
     if ( typeof _isotopeRoot !== "undefined" ){
         showIsotope(_isotopeRoot, _isotopeTemplate, _isotopeView);
         window.setTimeout(function(){
-          selectDay(7);
+          today = new Date();
+          day = today.getDate();
+          month = today.getMonth()+1;
+          year = today.getFullYear();
+          if (year <= 2017 && ((month == 10 && day <= 7) || month < 10)) {
+            selectDay(7);
+          } else if (year >= 2017 && ((month == 10 && day >= 14) || month > 10)) {
+            selectDay(14);
+          } else {
+            selectDay(day);
+          }
         }, 300);
     }
 });
