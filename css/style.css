@@ -330,8 +330,18 @@ body{
 	margin-left: -10px;
   z-index:750;
 }
+.specials.contrast-section{
+  background: #222; /*362f40*/ /*bac569*; /*#EDEAE6;*/
+	/*border:20px solid transparent;*/
+}
+.specials.contrast-section:after{
+	border:20px solid rgba(54,71,64,0.9);
+}
 .specials.backgrounded_alt:after{
 	border:20px solid transparent;
+}
+.specials.contrast-another-section:after {
+	border:20px solid rgba(34,34,34,0.9);
 }
 .date-area{
 	background: #364740; /*362f40*/ /*bac569*; /*#EDEAE6;*/
