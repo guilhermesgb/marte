@@ -56,6 +56,14 @@ body{
 	float: left;
 	padding:12px 0;
 }
+.logo:hover{
+  transition:all .2s linear;
+	-moz-transition:all .2s linear;/* firefox */
+	-webkit-transition:all .2s linear; /* safari and chrome */
+	-o-transition:all .2s linear; /* opera */
+	-ms-transition:all .2s linear;
+  opacity: 0.75;
+}
 .logo a img{
   width: transparent;
 }
@@ -111,7 +119,7 @@ body{
   position:relative;
 }
 .content_top.backgrounded_alt{
-	background:url('../images/background-alt.jpg');
+	background:url('../images/overlay2.png');
 }
 /*.content_top:after{
 	content: '';
@@ -219,6 +227,18 @@ body{
   z-index:750;
   position:relative;
 }
+.content_inner p a{
+  font-size: 1.2em;
+  font-family: 'Accent';
+  color: #62f40b;
+  margin-bottom: 0px;
+  z-index:750;
+  position:relative;
+}
+.content_inner p a:hover{
+  text-shadow: #222 0px 2px 80px;
+  opacity: 0.9;
+}
 .content_inner b p{
   font-size: 1.2em;
   font-style: oblique;
@@ -315,7 +335,6 @@ body{
 }
 .date-area{
 	background: #364740; /*362f40*/ /*bac569*; /*#EDEAE6;*/
-
 	padding:25px 0;
 	position:relative;
 }
@@ -383,7 +402,7 @@ body{
   	font-family: 'Primary', 'Roboto', sans-serif;
     display: inline;
 }
-.special-grid a:hover{
+.special-grid a:hover, .special-grid img:hover ~ a{
 	color: #62f40b;
 }
 .special-grid p{
@@ -809,52 +828,82 @@ body{
 }
 .contact-form{
 	position:relative;
+	padding-top:30px;
 	padding-bottom:30px;
+	text-align: center;
+  background-color: #364740;
+}
+.contact-form:after{
+	content: '';
+	position:absolute;
+	width: 0;
+	height: 0;
+	border:20px solid #cbe86b;
+	border-bottom: 0 solid rgba(0, 0, 0, 0)!important;
+	border-right: 15px solid rgba(0, 0, 0, 0)!important;
+	border-left: 15px solid rgba(0, 0, 0, 0)!important;
+	left:50%;
+	top:0px;
+	margin-left: -10px;
+  z-index:750;
 }
 .contact-form div{
-	padding:5px 0;
+  z-index: 750;
+  position: relative;
+  padding-top: 10px;
 }
 .contact-form span{
 	display:block;
-	font-family: 'Roboto', sans-serif;
-	font-size: 0.9em;
-	padding-bottom:5px;
-	color: #012231;
+	font-family: 'Accent', sans-serif;
+	font-size: 1.2em;
+	color: #cbe86b;
 	text-transform: uppercase;
 }
-.contact-form input[type="text"],.contact-form textarea{
-		   padding: 8px;
-			display: block;
-			width: 98%;
-			border: none;
-			outline: none;
-			color: #464646;
-			font-size: 0.8125em;
-			font-family: Arial, Helvetica, sans-serif;
-			border: 1px solid rgba(85, 85, 85, 0.19);
-			-webkit-appearance:none;
+.contact-form input[type="email"],.contact-form textarea{
+  padding: 8px;
+  width: 50%;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  font-size: 0.7125em;
+  font-family: 'Primary', Arial, Helvetica, sans-serif;
+  border: 0px;
+  -webkit-appearance:none;
+  background: #222; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Standard*/
+  text-shadow: #222 0px 2px 80px;
+  margin-bottom:30px;
+}
+.contact-form input[type="email"]{
+  width: 50%;
 }
 .contact-form textarea{
-		resize:none;
-		height:120px;
+  resize:none;
+  height:120px;
 }
 .mybutton{
-	font-family: 'Roboto', sans-serif;
-	background: #012231;
-	color: #d6d6d6;
-	padding: 15px 40px;
-	font-size: 0.875em;
+  font-family: 'Accent', 'Roboto', sans-serif;
+	color:#ffffff;
+	background-color:#222; /*009175;*/
+	display: inline-block;
 	text-transform: uppercase;
-	display: block;
+	padding: 10px 20px;
+	font-size:1em;
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
+  z-index:750;
+  position:relative;
 	cursor:pointer;
 	border:none;
 }
 .mybutton:hover{
-	background: #00B895;
-	color: #FFF;
+  background:#62f40b;
+  color: #fff;
 }
 .company_address{
 	padding-top:26px;
@@ -1153,9 +1202,12 @@ body{
 		width:94%;
 		padding:3%;
 	}
-  .contact-form input[type="text"],.contact-form textarea{
+  .contact-form input[type="email"],.contact-form textarea{
 		width:97%;
 	}
+  .mybutton{
+    font-size: 0.7em;
+  }
   .overlay{
     background-image: url('../images/overlay2.png');
   }
@@ -1247,9 +1299,13 @@ body{
 		width:90%;
 		padding:5%;
 	}
-	.contact-form input[type="text"],.contact-form textarea{
+	.contact-form input[type="email"],.contact-form textarea{
 		width:92%;
+    font-size: 0.6em;
 	}
+  .mybutton{
+    font-size: 0.6em;
+  }
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.5em;
   }
