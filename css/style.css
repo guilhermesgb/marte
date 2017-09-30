@@ -81,11 +81,11 @@ body{
 	display: block;
 	position: relative;
 	text-transform: uppercase;
-	transition-duration: 0.5s;
+	transition-duration: 0.35s;
   transition-timing-function: ease;
-	-o-transition-duration: 0.5s;
+	-o-transition-duration: 0.35s;
   -o-transition-timing-function: ease;
-	-webkit-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.35s;
   -webkit-transition-timing-function: ease;
 	font-size: 0.875em;
 	position:relative;
@@ -130,7 +130,7 @@ body{
 	font-size:3em;
   font-family: 'Accent';
 	color: #62f40b;
-  text-shadow: #404146 1px 2px;
+  text-shadow: #404146 1px 2px 4px;
 	padding-bottom:14px;
   z-index:750;
   position:relative;
@@ -200,6 +200,7 @@ body{
 }
 .content_inner span a:hover{
 	background:#62f40b;
+  color: #fff;
 }
 .content_inner p{
 	font-size:1em;
@@ -312,6 +313,26 @@ body{
 .specials.backgrounded_alt:after{
 	border:20px solid transparent;
 }
+.date-area{
+	background: #364740; /*362f40*/ /*bac569*; /*#EDEAE6;*/
+
+	padding:25px 0;
+	position:relative;
+}
+.date-area:after{
+	content: '';
+	position:absolute;
+	width: 0;
+	height: 0;
+	border:20px solid #cbe86b;
+	border-bottom: 0 solid rgba(0, 0, 0, 0)!important;
+	border-right: 15px solid rgba(0, 0, 0, 0)!important;
+	border-left: 15px solid rgba(0, 0, 0, 0)!important;
+	left:50%;
+	top:0px;
+	margin-left: -10px;
+  z-index:750;
+}
 .specials-heading h3{
 	font-family: 'Accent', 'Roboto', sans-serif;
 	font-size: 1.8em;
@@ -386,6 +407,65 @@ body{
 }
 .specials-grids {
 	padding-top: 50px 0;
+}
+.date-button-grids {
+	padding-top: 10px 0;
+}
+.date-button-grid {
+	float: left;
+	width: 10.5%;
+	margin-right: 2%;
+	text-align: center;
+}
+.date-button-grid img{
+	width:100%;
+  z-index:750;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition:all .2s linear;
+	-moz-transition:all .2s linear;/* firefox */
+	-webkit-transition:all .2s linear; /* safari and chrome */
+	-o-transition:all .2s linear; /* opera */
+	-ms-transition:all .2s linear;
+  opacity: 0.75;
+}
+.date-button-grid img:hover{
+  box-shadow: 0 6px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1;
+}
+.date-button-grid a{
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-family: 'Accent', 'Roboto', sans-serif;
+	color:#cbe86b;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	padding: 0.3em 0;
+	display: block;
+  z-index:750;
+  position:relative;
+}
+.date-button-grid p a{
+  	font-family: 'Primary', 'Roboto', sans-serif;
+    display: inline;
+}
+.date-button-grid a:hover, .date-button-grid a.active{
+	color: #62f40b;
+}
+.date-button-grid p{
+	font-size: 0.875em;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0em 1em 1em 1em;
+	line-height: 1.5em;
+}
+.content_inner .date-button-grid span a{
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.date-button-grid-end{
+	margin: 0px;
 }
 /*----start-testmonial-grid----*/
 .testmonials{
@@ -812,6 +892,59 @@ body{
   display: none;
   visibility: hidden;
 }
+.entry-schedule{
+  width: 100%;
+  cursor: pointer;
+}
+.entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity, .entry-schedule.entry-schedule-performing-box, .entry-schedule.entry-schedule-arts-knowledge{
+  background-color: rgba(96, 95, 80, 0.1625);
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(96, 95, 80, 0.1625), rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(96, 95, 80, 0.1625), rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(96, 95, 80, 0.1625), rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(96, 95, 80, 0.1625), rgba(0,0,0,0)); /*Standard*/
+}
+.entry-schedule.entry-schedule-meta:hover{
+  font-size: 1.05em;
+}
+.entry-schedule.entry-schedule-main{
+  background: #222; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(34,34,34,0.8), rgba(0,0,0,0)); /*Standard*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.15em;
+}
+.entry-schedule.entry-schedule-main:hover {
+  /*box-shadow: 0 6px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  text-shadow: #222 0px 2px 80px;
+  font-size:1.2em;
+}
+.entry-schedule.entry-schedule-univerisity:hover{
+  background-color: rgba(125, 66, 131, 0.4625);
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(125, 66, 131, 0.4625), rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(125, 66, 131, 0.4625), rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(125, 66, 131, 0.4625), rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(125, 66, 131, 0.4625), rgba(0,0,0,0)); /*Standard*/
+  font-size: 1.05em;
+}
+.entry-schedule.entry-schedule-performing-box:hover{
+  background-color: rgba(131, 129, 66, 0.4625);
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(131, 129, 66, 0.4625), rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(131, 129, 66, 0.4625), rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(131, 129, 66, 0.4625), rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(131, 129, 66, 0.4625), rgba(0,0,0,0)); /*Standard*/
+  font-size: 1.05em;
+}
+.entry-schedule.entry-schedule-arts-knowledge:hover{
+  background-color: rgba(131, 80, 66, 0.4625);
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(131, 80, 66, 0.4625), rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(131, 80, 66, 0.4625), rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(131, 80, 66, 0.4625), rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(131, 80, 66, 0.4625), rgba(0,0,0,0)); /*Standard*/
+  font-size: 1.05em;
+}
 /*----responsive-design-----*/
 @media only screen and (max-width: 1366px) and (min-width: 1280px) {
 	.wrap{
@@ -820,6 +953,15 @@ body{
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.75em;
   }
+  .content_inner .date-button-grid span a{
+    font-size: 0.75em;
+  }
+  .date-heading{
+    font-size: 0.75em;
+  }
+}
+.date-heading{
+  font-size: 0.7em;
 }
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
 	.wrap{
@@ -827,6 +969,24 @@ body{
 	}
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.5em;
+  }
+  .content_inner .date-button-grid span a{
+    font-size: 0.7em;
+  }
+  .date-heading{
+    font-size: 0.7em;
+  }
+  .entry-schedule.entry-schedule-main{
+    font-size: 1.15em;
+  }
+  .entry-schedule.entry-schedule-main:hover {
+    font-size:1.2em;
+  }
+  .entry-schedule.entry-schedule-meta, .entry-schedule.entry-schedule-univerisity, .entry-schedule.entry-schedule-performing-box, .entry-schedule.entry-schedule-arts-knowledge {
+    font-size: 1em;
+  }
+  .entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity:hover, .entry-schedule.entry-schedule-performing-box:hover, .entry-schedule.entry-schedule-arts-knowledge:hover{
+    font-size: 1.05em;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -838,6 +998,23 @@ body{
 	}
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.5em;
+  }
+  .content_inner .date-button-grid span a{
+    font-size: 0.65em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .entry-schedule.entry-schedule-main{
+    font-size: 1.15em;
+  }
+  .entry-schedule.entry-schedule-main:hover {
+    font-size:1.2em;
+  }
+  .entry-schedule.entry-schedule-meta, .entry-schedule.entry-schedule-univerisity, .entry-schedule.entry-schedule-performing-box, .entry-schedule.entry-schedule-arts-knowledge {
+    font-size: 1em;
+  }
+  .entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity:hover, .entry-schedule.entry-schedule-performing-box:hover, .entry-schedule.entry-schedule-arts-knowledge:hover{
+    font-size: 1.05em;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -870,6 +1047,11 @@ body{
 		width:94%;
 		padding:3%;
 	}
+  .content_inner .date-button-grid span a{
+    font-size: 0.6em;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 /*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
 @media only screen and (max-width: 640px){
@@ -934,6 +1116,9 @@ body{
 	.specials-grids{
 		padding-top:10px 0;
 	}
+  .date-button-grids {
+  	padding-top: 2px 0;
+  }
 	.testmonials{
 		padding:0 0 30px 0;
 	}
@@ -984,6 +1169,30 @@ body{
   .corpo_tecnico_small{
     display: block;
     visibility: visible;
+  }
+  .date-button-grid{
+		width:17%;
+		padding:3%;
+	}
+  .date-button-grid-end-small{
+  	margin: 0px;
+  }
+  .content_inner .date-button-grid span a{
+    font-size: 0.55em;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .entry-schedule.entry-schedule-main{
+    font-size: 0.95em;
+  }
+  .entry-schedule.entry-schedule-main:hover {
+    font-size:1em;
+  }
+  .entry-schedule.entry-schedule-meta, .entry-schedule.entry-schedule-univerisity, .entry-schedule.entry-schedule-performing-box, .entry-schedule.entry-schedule-arts-knowledge {
+    font-size: 0.8em;
+  }
+  .entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity:hover, .entry-schedule.entry-schedule-performing-box:hover, .entry-schedule.entry-schedule-arts-knowledge:hover{
+    font-size: 0.85em;
   }
 }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -1044,6 +1253,24 @@ body{
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.5em;
   }
+  .content_inner .date-button-grid span a{
+    font-size: 0.5em;
+  }
+  .date-heading{
+    font-size: 0.55em;
+  }
+  .entry-schedule.entry-schedule-main{
+    font-size: 0.58em;
+  }
+  .entry-schedule.entry-schedule-main:hover {
+    font-size:0.59em;
+  }
+  .entry-schedule.entry-schedule-meta, .entry-schedule.entry-schedule-univerisity, .entry-schedule.entry-schedule-performing-box, .entry-schedule.entry-schedule-arts-knowledge {
+    font-size: 0.52em;
+  }
+  .entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity:hover, .entry-schedule.entry-schedule-performing-box:hover, .entry-schedule.entry-schedule-arts-knowledge:hover{
+    font-size: 0.53em;
+  }
 }
 @media only screen and (max-width: 320px) {
 	.wrap{
@@ -1086,6 +1313,24 @@ body{
   }
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.4em;
+  }
+  .content_inner .date-button-grid span a{
+    font-size: 0.5em;
+  }
+  .date-heading{
+    font-size: 0.5em;
+  }
+  .entry-schedule.entry-schedule-main{
+    font-size: 0.58em;
+  }
+  .entry-schedule.entry-schedule-main:hover {
+    font-size:0.59em;
+  }
+  .entry-schedule.entry-schedule-meta, .entry-schedule.entry-schedule-univerisity, .entry-schedule.entry-schedule-performing-box, .entry-schedule.entry-schedule-arts-knowledge {
+    font-size: 0.52em;
+  }
+  .entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity:hover, .entry-schedule.entry-schedule-performing-box:hover, .entry-schedule.entry-schedule-arts-knowledge:hover{
+    font-size: 0.53em;
   }
 }
 @font-face {
