@@ -1224,6 +1224,9 @@ body{
   .overlay{
     background-image: url('../images/overlay2.png');
   }
+  .content_top.backgrounded_alt{
+  	background:url('../images/overlay3.png');
+  }
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.75em;
   }
