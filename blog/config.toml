@@ -1,0 +1,4 @@
+relativeURLs = true
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+uglyURLs = true
+publishDir = "generated"

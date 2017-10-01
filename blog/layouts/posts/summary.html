@@ -1,0 +1,21 @@
+<div class="specials backgrounded_alt">
+  <div class="wrap">
+    <div class="specials-heading">
+      <h3>{{ .Title }}</h3>
+    </div>
+  </div>
+  <div class="content_inner close_to_map_headline">
+    <div class="wrap">
+      <p class="post-description">{{ .Description }}</p>
+      <p class="post-datetime">{{ .Date.Format "Postado em: 2/1 de 2006, às 15:04." }}</p>
+      <div class="wrap">
+        <div class="post-content">
+          <p>
+            {{ .Summary }}
+          </p>
+        </div>
+      </div>
+      <a class="post-readmore" href="{{ .Permalink }}">Continuar Lendo</a>
+    </div>
+  </div>
+</div>

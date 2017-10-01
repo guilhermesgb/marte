@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     gtag('config', 'UA-107183100-1');
   </script>
-  <title>MARTE – Mostra de Artes Teatrais Integradas | Contato</title>
+  <title>MARTE – Mostra de Artes Teatrais Integradas | Notícias</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
@@ -38,8 +38,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li><a href="programacao.html">PROGRAMAÇÃO</a></li>
               <li><a href="eixos.html">EIXOS</a></li>
               <li><a href="locais.html">LOCAIS</a></li>
-              <li><a href="blog.html">NOTÍCIAS</a></li>
-              <li class="active"><a href="contato.html">CONTATO</a></li>
+              <li class="active"><a href="blog.html">NOTÍCIAS</a></li>
+              <li><a href="contato.html">CONTATO</a></li>
             </ul>
   				 </div>
 			     <div class="clear"> </div>
@@ -71,72 +71,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="clear"> </div>
 		<!---start-content---->
 		<div class="content">
-			    <div class="content_top backgrounded_alt">
-			    	<div class="wrap">
-						<h1><a>ENTRE EM CONTATO COM A GENTE</a></h1>
-					</div>
-			    </div>
-			<div class="specials backgrounded_alt">
-				<div class="wrap">
-          <div class="wrap">
-            <div class="specials-heading">
-  						<h3 id="teatros">NAS REDES</h3>
-  					</div>
-  					<div class="content_inner">
-              <div class="wrap">
-                <p>Clique abaixo para acessar algumas de nossas presenças nas redes sociais!</p>
-              </div>
-  						<div class="specials-grids">
-                <div class="special-grid spe-placeholder">
-  								<img src="images/grids-img4.jpg"/>
-  							</div>
-                <div class="special-grid">
-  								<img src="images/pagina-facebook.png"/>
-                  <a href="https://www.facebook.com/marte.mostra/" target="_blank">Página no Facebook</a>
-  							</div>
-  							<div class="special-grid spe-grid spe-placeholder">
-  								<img src="images/grids-img5.jpg"/>
-  							</div>
-  							<div class="clear"> </div>
-  						</div>
-            </div>
-          </div>
-          <br/><br/>
-					<div class="specials-heading">
-						<h3>VIA FORMULÁRIO</h3>
-					</div>
-          <div class="content_inner close_to_map_viewport">
-            <div class="wrap">
-              <p>Entre em contato direto com nossa <b>Acessoria de Comunicação</b> enviando uma mensagem no formulário abaixo!</p>
-            </div>
-          </div>
-          <div class="contact-form">
-            <div class="wrap">
-              <form method="POST" action="http://formspree.io/marteascom@gmail.com">
-                <input type="hidden" name="_next" value="/obrigado.html"/>
-                <input type="hidden" name="_subject" value="Contato via site da MARTE"/>
-                <input type="hidden" name="_language" value="pt"/>
-                <div>
-                  <span><label>E-MAIL</label></span>
-                  <span><input name="email" placeholder="Seu e-mail" type="email"></span>
-                </div>
-                <div>
-                  <span><label>Mensagem</label></span>
-                  <span><textarea name="message" placeholder="Sua mensagem"></textarea></span>
-                </div>
-                <div>
-                  <span><input class="mybutton" type="submit" value="Enviar"></span>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="content_inner close_to_map_viewport">
-            <div class="wrap">
-              <p>Você também pode entrar em contato com a <b>Produção da MARTE</b> através do endereço: <a href="mailto:someone@yoursite.com?subject=Contato%20via%20site%20da%20MARTE">marteaproducao@gmail.com</a>.</p>
-            </div>
-          </div>
+	    <div class="content_top backgrounded_alt">
+	    	<div class="wrap">
+          <h1><a>NOTÍCIAS</a></h1>
         </div>
-      </div>
+	    </div>
+      {{ range first 100 .Data.Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
 		<!---End-content---->
 		<div class="clear"> </div>
 
