@@ -427,7 +427,7 @@ body{
   	font-family: 'Primary', 'Roboto', sans-serif;
     display: inline;
 }
-.special-grid a:hover, .special-grid img:hover ~ a{
+.special-grid a:hover, .special-grid img:hover ~ a, .special-grid .image-link:hover ~ a{
 	color: #62f40b;
 }
 .special-grid p{
@@ -1048,6 +1048,10 @@ body{
 }
 .post-content p::first-letter{
   padding-left: 50px !important;
+}
+.post-content p em{
+  color: #62f40b;
+  font-family: 'Accent';
 }
 .post-readmore{
   font-family: 'Accent', 'Roboto', sans-serif;
