@@ -1,8 +1,8 @@
-+++
-title = "Zé Celso na MARTE"
-description = "Confirmada sua vinda à João Pessoa em Outubro"
-date = "2017-10-01 06:27:00"
-+++
+---
+title: "Zé Celso na MARTE"
+description: "Confirmada sua vinda à João Pessoa em Outubro"
+date: "2017-10-01 06:27:00"
+---
 
 No ano em que completa 80 anos, o dramaturgo Zé Celso vem a João Pessoa para participar da Mostra de Artes Teatrais Integradas (MARTE), que acontece entre os dias 7 e 14 de outubro de 2017. A programação da Mostra ainda contará com mais 10 espetáculos, sendo seis da Paraíba e quatro de outros estados.
 
