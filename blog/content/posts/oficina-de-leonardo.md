@@ -1,6 +1,6 @@
 ---
 title: "Oficina de Leonardo"
-description: "\"Composição da Personagem Drag – Construindo uma Arte de Resistência\", de Leonardo Palma – UFRN"
+description: "Oficina \"Composição da Personagem Drag – Construindo uma Arte de Resistência\", de Leonardo Palma – UFRN"
 date: "2017-09-30 18:57:00"
 ---
 

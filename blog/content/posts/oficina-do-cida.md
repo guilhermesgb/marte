@@ -1,6 +1,6 @@
 ---
 title: "Oficina do CIDA"
-description: "\"Práticas Experimentais Em Dança Para A Dramaturgia Em Tempo\", do CIDA – RN"
+description: "Oficina \"Práticas Experimentais Em Dança Para A Dramaturgia Em Tempo\", do CIDA – RN"
 date: "2017-09-30 18:55:00"
 ---
 

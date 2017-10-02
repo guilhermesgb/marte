@@ -40,6 +40,11 @@
         anchorOffset = $(match).offset().top - this.getFixedOffset();
         $('html, body').animate({ scrollTop: anchorOffset});
 
+        $('.highlighted').removeClass("highlighted");
+        if ($(match)[0].id && $('#' + $(match)[0].id + ':has(img)')) {
+          $('#' + $(match)[0].id + ':has(img)').addClass("highlighted");
+        }
+
         // Add the state to history as-per normal anchor links
         if(HISTORY_SUPPORT && pushToHistory) {
           history.pushState({}, document.title, location.pathname + href);

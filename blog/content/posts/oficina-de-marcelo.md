@@ -1,6 +1,6 @@
 ---
 title: "Oficina de Marcelo"
-description: "\"Elementais\", de Marcelo Sousa – UFPB"
+description: "Oficina \"Elementais\", de Marcelo Sousa – UFPB"
 date: "2017-09-30 18:40:00"
 ---
 

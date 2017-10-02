@@ -1,6 +1,6 @@
 ---
 title: "Oficina de Diocélio"
-description: "\"O Corpo Cômico\", de Diocélio Barbosa – UFRN"
+description: "Oficina \"O Corpo Cômico\", de Diocélio Barbosa – UFRN"
 date: "2017-09-30 18:22:00"
 ---
 
