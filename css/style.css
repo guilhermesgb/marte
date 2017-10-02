@@ -1031,6 +1031,22 @@ body{
   background: linear-gradient(to right, rgba(0,0,0,0), rgba(131, 80, 66, 0.4625), rgba(0,0,0,0)); /*Standard*/
   font-size: 1.05em;
 }
+.entry-schedule.highlighted, .entry-schedule.highlighted:hover{
+  border-right-style: dashed;
+  border-left-style: dashed;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-width: 5px;
+  border-color: #62f40b;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+.entry-schedule:not(.highlighted) .redundant-day{
+  display: none;
+}
+.entry-schedule.highlighted .redundant-day{
+  display: inline;
+}
 .post-description{
   font-size: 1.2em !important;
   font-family: 'Accent' !important;
@@ -1431,6 +1447,12 @@ body{
   .entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity:hover, .entry-schedule.entry-schedule-performing-box:hover, .entry-schedule.entry-schedule-arts-knowledge:hover{
     font-size: 0.53em;
   }
+  .special-grid .highlighted img{
+    border-width: 3.5px;
+  }
+  .entry-schedule.highlighted, .entry-schedule.highlighted:hover{
+    border-width: 3.5px;
+  }
 }
 @media only screen and (max-width: 320px) {
 	.wrap{
@@ -1491,6 +1513,12 @@ body{
   }
   .entry-schedule.entry-schedule-meta:hover, .entry-schedule.entry-schedule-univerisity:hover, .entry-schedule.entry-schedule-performing-box:hover, .entry-schedule.entry-schedule-arts-knowledge:hover{
     font-size: 0.53em;
+  }
+  .special-grid .highlighted img{
+    border-width: 2.5px;
+  }
+  .entry-schedule.highlighted, .entry-schedule.highlighted:hover{
+    border-width: 2.5px;
   }
 }
 @font-face {

@@ -9,3 +9,7 @@ Retrata o cotidiano do trabalhador rural da Zona da Mata pernambucana, região c
 Na roda ao ar livre, o espetáculo intenta refletir possibilidades para uma realidade experimental criativa que não endosse a prerrogativa de cultura popular estática, homogênea, abstrata, anônima e rompida com o mundo moderno.
 
 A companhia surge em 2014 por iniciativa de artistas que dançam, atuam, tocam instrumentos e têm vontade de levar à cena padrões de movimento da tradição brasileira mesclados a outras experiências corporais.
+
+----------------------
+
+Confira o horário e onde ocorrerá este espetáculo [através desse link](/programacao.html#horarios?fua-de-terreiro).

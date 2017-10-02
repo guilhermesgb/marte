@@ -8,6 +8,10 @@ Ah, o amor... A palhaça Cacatua e o palhaço Suvelão estão enamorados. Assume
 
 O coletivo nasce em 2014 centrado na pesquisar da linguagem da palhaçaria, mais precisamente a partir das potencialidades do corpo em estado risível.
 
+----------------------
+
+Confira o horário e onde ocorrerá este espetáculo [através desse link](/programacao.html#horarios?clownssicos).
+
 Encenação e dramaturgia: *Diocélio Barbosa*
 
 Com: *Daniel Nóbrega* e *Irla Medeiros*

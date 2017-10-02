@@ -132,12 +132,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   						<h3 class="date-summary">SÁBADO, 7 de Outubro</h3>
   					</div>
             <br/>
-      			<div class="date-area">
+      			<div id="horarios" class="date-area">
               <script id="isotope-template" type="x-tmpl-mustache">
               {{#entries}}
                 {{#link}}<a href="{{link}}">{{/link}}
-                  <p class="entry-schedule entry-schedule-{{axis}} isotope-item" data-date="{{date}}" data-time="{{time}}">
-                    <b>{{display_time}}</b>, {{location}}{{#classification}} – Classificação: <b>{{classification}}</b>{{/classification}}; <br/><b>{{activity}}</b>{{#presenter}} – {{presenter}}{{/presenter}}{{#from}} ({{from}}){{/from}}.
+                  <p id="{{id}}" class="entry-schedule entry-schedule-{{axis}} isotope-item" data-date="{{date}}" data-time="{{time}}">
+                    <b class="redundant-day">{{day}} ({{date}}/10) – </b><b>{{display_time}}</b>, {{location}}{{#classification}} – Classificação: <b>{{classification}}</b>{{/classification}}; <br/><b>{{activity}}</b>{{#presenter}} – {{presenter}}{{/presenter}}{{#from}} ({{from}}){{/from}}.
                   </p>
                 {{#link}}</a>{{/link}}
               {{/entries}}
@@ -255,7 +255,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '16 Anos',
                   location: 'Theatro Santa Roza',
                   axis: 'main',
-                  link: '/eixos.html#ze-celso'
+                  link: '/eixos.html#ze-celso',
+                  id: 'ze-celso'
               },
               {
                   date: '8',
@@ -266,7 +267,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   presenter: 'Grupo Bufões de Olavo',
                   from: 'João Pessoa/Paraíba',
                   location: 'Espaço Caixa Cênica',
-                  axis: 'performing-box'
+                  axis: 'performing-box',
+                  link: '/eixos.html#clown-bar',
+                  id: 'clown-bar'
               },
               {
                   date: '8',
@@ -278,7 +281,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'João Pessoa/Paraíba',
                   classification: 'Livre',
                   location: 'Theatro Santa Roza',
-                  axis: 'meta'
+                  axis: 'meta',
+                  link: '/index.html#prima',
+                  id: 'prima'
               },
               {
                   date: '8',
@@ -291,7 +296,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: 'Livre',
                   location: 'Theatro Santa Roza',
                   axis: 'main',
-                  link: '/eixos.html#clownssicos'
+                  link: '/eixos.html#clownssicos',
+                  id: 'clownssicos'
               },
               {
                   date: '8',
@@ -304,7 +310,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: 'Livre',
                   location: 'Theatro Santa Roza',
                   axis: 'main',
-                  link: '/eixos.html#fua-de-terreiro'
+                  link: '/eixos.html#fua-de-terreiro',
+                  id: 'fua-de-terreiro'
               },
               {
                   date: '9',
@@ -322,7 +329,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   display_time: '14h',
                   activity: 'Espaço para Divulgação de Pesquisas Teatrais',
                   location: 'UFPB – Cine Aruanda',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#divulgacao-pesquisas',
+                  id: 'divulgacao-pesquisas'
               },
               {
                   date: '9',
@@ -334,19 +343,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'João Pessoa/Paraíba',
                   classification: 'Livre',
                   location: 'Espaço Caixa Cênica',
-                  axis: 'performing-box'
-              },
-              {
-                  date: '9',
-                  day: 'Segunda',
-                  time: 16,
-                  display_time: '16h',
-                  activity: 'Histórias de Olhos Vendados',
-                  presenter: 'Companhia de Teatro Nós 2',
-                  from: 'João Pessoa/Paraíba',
-                  classification: 'Livre',
-                  location: 'Espaço Caixa Cênica',
-                  axis: 'performing-box'
+                  axis: 'performing-box',
+                  link: '/eixos.html#historias-de-olhos-vendados',
+                  id: 'historias-de-olhos-vendados'
               },
               {
                   date: '9',
@@ -358,7 +357,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFPB',
                   classification: 'Livre',
                   location: 'Teatro Lima Penante',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#saltimbancos',
+                  id: 'saltimbancos'
               },
               {
                   date: '9',
@@ -370,7 +371,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFPB',
                   classification: '14 Anos',
                   location: 'Teatro Lima Penante',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#cartas-para-amante',
+                  id: 'cartas-para-amante'
               },
               {
                   date: '9',
@@ -383,7 +386,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '16 Anos',
                   location: 'Teatro Lima Penante',
                   axis: 'main',
-                  link: '/eixos.html#cida'
+                  link: '/eixos.html#cida',
+                  id: 'cida-historia-container'
               },
               {
                   date: '10',
@@ -396,7 +400,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '18 Anos',
                   location: 'UFPB/CCTA – Sala 227',
                   axis: 'arts-knowledge',
-                  link: '/eixos.html#oficina-do-cida'
+                  link: '/eixos.html#oficina-do-cida',
+                  id: 'oficina-cida-primeira-sessao'
               },
               {
                   date: '10',
@@ -406,7 +411,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   activity: '[Palestra] Hibridismos',
                   presenter: 'Professora Nara Salles',
                   location: 'UFPB – Cine Aruanda',
-                  axis: 'arts-knowledge'
+                  axis: 'arts-knowledge',
+                  link: '/eixos.html#palestra-de-nara',
+                  id: 'palestra-de-nara'
               },
               {
                   date: '10',
@@ -418,7 +425,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFPB',
                   classification: 'Livre',
                   location: 'Espaço Caixa Cênica',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#guerreiro',
+                  id: 'guerreiro'
               },
               {
                   date: '10',
@@ -430,7 +439,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'Paraíba',
                   classification: 'Livre',
                   location: 'Teatro Lima Penante',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#a-vida-eh-sonho',
+                  id: 'a-vida-eh-sonho'
               },
               {
                   date: '10',
@@ -442,7 +453,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFRN',
                   classification: 'Livre',
                   location: 'Hall do Theatro Santa Roza',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#segredo',
+                  id: 'segredo'
               },
               {
                   date: '10',
@@ -455,7 +468,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '18 Anos',
                   location: 'Theatro Santa Roza',
                   axis: 'main',
-                  link: '/eixos.html#cida'
+                  link: '/eixos.html#cida',
+                  id: 'cida-etereo-eufemea'
               },
               {
                   date: '11',
@@ -468,7 +482,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '18 Anos',
                   location: 'UFPB/CCTA – Sala 09',
                   axis: 'arts-knowledge',
-                  link: '/eixos.html#oficina-do-cida'
+                  link: '/eixos.html#oficina-do-cida',
+                  id: 'oficina-cida-segunda-sessao'
               },
               {
                   date: '11',
@@ -479,19 +494,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   presenter: 'Leonardo Palma',
                   from: 'UFRN',
                   classification: '15 Anos',
-                  location: 'UFPB/CCTA – Sala ??',
-                  axis: 'univerisity',
-                  link: '/eixos.html#oficina-de-leonardo'
+                  location: 'UFPB/CCTA – Sala 12',
+                  axis: 'arts-knowledge',
+                  link: '/eixos.html#oficina-de-leonardo',
+                  id: 'oficina-de-leonardo'
               },
               {
                   date: '11',
                   day: 'Quarta',
                   time: 14,
                   display_time: '14h',
-                  activity: '[Debate] Formação De Plateia – Pedagogia Do Espectador',
-                  presenter: 'Grupos envolvidos na MARTE',
+                  activity: '[Debate] Formação De Plateias – Pedagogia Do Espectador',
                   location: 'UFPB – Cine Aruanda',
-                  axis: 'arts-knowledge'
+                  axis: 'arts-knowledge',
+                  link: '/eixos.html#debate-formacao-de-plateias',
+                  id: 'debate-formacao-de-plateias'
               },
               {
                   date: '11',
@@ -503,7 +520,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'Paraíba',
                   classification: 'Livre',
                   location: 'Espaço Caixa Cênica',
-                  axis: 'performing-box'
+                  axis: 'performing-box',
+                  link: '/eixos.html#dona-maria-do-doce',
+                  id: 'dona-maria-do-doce'
               },
               {
                   date: '11',
@@ -515,7 +534,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'Paraíba',
                   classification: 'Livre',
                   location: 'Espaço Caixa Cênica',
-                  axis: 'performing-box'
+                  axis: 'performing-box',
+                  link: '/eixos.html#boaba-a-arvore-da-vida',
+                  id: 'boaba-a-arvore-da-vida'
               },
               {
                   date: '11',
@@ -527,7 +548,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'Paraíba',
                   classification: 'Livre',
                   location: 'Espaço Caixa Cênica',
-                  axis: 'performing-box'
+                  axis: 'performing-box',
+                  link: '/eixos.html#ana-e-ana',
+                  id: 'ana-e-ana'
               },
               {
                   date: '11',
@@ -539,7 +562,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'Recife/PE',
                   classification: 'Livre',
                   location: 'Espaço Caixa Cênica',
-                  axis: 'performing-box'
+                  axis: 'performing-box',
+                  link: '/eixos.html#a-chegada-de-godot',
+                  id: 'a-chegada-de-godot'
               },
               {
                   date: '11',
@@ -551,7 +576,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'Paraíba',
                   classification: '14 Anos',
                   location: 'Teatro Lima Penante',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#travessia',
+                  id: 'travessia'
               },
               {
                   date: '11',
@@ -564,7 +591,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '14 Anos',
                   location: 'Theatro Santa Roza',
                   axis: 'main',
-                  link: '/eixos.html#carmin'
+                  link: '/eixos.html#carmin',
+                  id: 'carmin'
               },
               {
                   date: '12',
@@ -577,7 +605,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: 'Livre',
                   location: 'Theatro Santa Roza',
                   axis: 'main',
-                  link: '/eixos.html#arretados'
+                  link: '/eixos.html#arretados',
+                  id: 'arretados'
               },
               {
                   date: '12',
@@ -589,7 +618,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFBA',
                   classification: '16 Anos',
                   location: 'Teatro Lima Penante',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#xou-da-xuca',
+                  id: 'xou-da-xuca'
               },
               {
                   date: '12',
@@ -601,7 +632,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFRN',
                   classification: '16 Anos',
                   location: 'Teatro Lima Penante',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#soraia-queimada',
+                  id: 'soraia-queimada'
               },
               {
                   date: '12',
@@ -613,7 +646,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFRN',
                   classification: '12 Anos',
                   location: 'Teatro Lima Penante',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#debaixo-da-pele',
+                  id: 'debaixo-da-pele'
               },
               {
                   date: '13',
@@ -625,8 +660,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFRN',
                   classification: '15 Anos',
                   location: 'UFPB/CCTA – Sala 09',
-                  axis: 'univerisity',
-                  link: '/eixos.html#oficina-de-diocelio'
+                  axis: 'arts-knowledge',
+                  link: '/eixos.html#oficina-de-diocelio',
+                  id: 'oficina-de-diocelio'
               },
               {
                   date: '13',
@@ -638,8 +674,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFPB',
                   classification: '16 Anos',
                   location: 'UFPB/CCTA – Sala 13',
-                  axis: 'univerisity',
-                  link: '/eixos.html#oficina-de-marcelo'
+                  axis: 'arts-knowledge',
+                  link: '/eixos.html#oficina-de-marcelo',
+                  id: 'oficina-de-marcelo'
               },
               {
                   date: '13',
@@ -647,10 +684,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   time: 14,
                   display_time: '14h',
                   activity: '[Debate] Teatro Em Tempos De Crise',
-                  presenter: 'Valmir Santos',
-                  from: 'UFPB',
                   location: 'UFPB/CCHLA – Auditório 411',
-                  axis: 'arts-knowledge'
+                  axis: 'arts-knowledge',
+                  link: '/eixos.html#debate-teatro-em-tempos-de-crise',
+                  id: 'debate-teatro-em-tempos-de-crise'
               },
               {
                   date: '13',
@@ -662,7 +699,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'UFRN',
                   classification: 'Livre',
                   location: 'UFPB – Praça da Alegria',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#cambalhotas',
+                  id: 'cambalhotas'
               },
               {
                   date: '13',
@@ -675,7 +714,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '14 Anos',
                   location: 'Área Externa do Theatro Santa Roza',
                   axis: 'main',
-                  link: '/eixos.html#corpos-de-saia'
+                  link: '/eixos.html#corpos-de-saia',
+                  id: 'corpos-de-saia'
               },
               {
                   date: '13',
@@ -687,7 +727,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   from: 'São Paulo',
                   classification: '14 Anos',
                   location: 'Theatro Santa Roza',
-                  axis: 'meta'
+                  axis: 'meta',
+                  link: '/index.html#monologo-jitman',
+                  id: 'monologo-jitman'
               },
               {
                   date: '13',
@@ -700,31 +742,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '14 Anos',
                   location: 'Teatro Paulo Pontes',
                   axis: 'main',
-                  link: '/eixos.html#ser-tao-teatro'
+                  link: '/eixos.html#ser-tao-teatro',
+                  id: 'ser-tao-teatro'
               },
               {
                   date: '13',
                   day: 'Sexta',
                   time: 21.5,
                   display_time: '21h30',
-                  activity: 'Show com o DJ Kylt',
-                  presenter: 'DJ Kylt',
+                  activity: 'Show com o DJ KYLT',
+                  presenter: 'DJ KYLT',
                   from: 'João Pessoa/Paraíba',
                   classification: 'Livre',
                   location: 'Teatro de Arena',
-                  axis: 'meta'
+                  axis: 'meta',
+                  link: '/index.html#dj-kylt',
+                  id: 'dj-kylt'
               },
               {
                   date: '14',
                   day: 'Sábado',
                   time: 18,
                   display_time: '18h',
-                  activity: 'Agreste Malvarosa',
+                  activity: 'Agreste Malva Rosa',
                   presenter: 'Bacharelado',
                   from: 'UFPB',
                   classification: '16 Anos',
                   location: 'Theatro Santa Roza',
-                  axis: 'univerisity'
+                  axis: 'univerisity',
+                  link: '/eixos.html#agreste-malva-rosa',
+                  id: 'agreste-malva-rosa'
               },
               {
                   date: '14',
@@ -737,7 +784,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                   classification: '12 Anos',
                   location: 'Teatro Paulo Pontes',
                   axis: 'main',
-                  link: '/eixos.html#nalini'
+                  link: '/eixos.html#nalini',
+                  id: 'nalini'
               },
               {
                   date: '14',

@@ -12,12 +12,13 @@ Em seguida, a partir da imagem impressa do rosto do proponente (a escolha do ros
 
 Ao final da oficina tiraremos foto para que tenhamos o registro dos resultados e fixaremos as folhas em espaços onde estará ocorrendo o evento.
 
+Oficina a ser ministrada por *Leonardo Palma*, diretamente da Universidade Federal do Rio Grande do Norte.
+
+----------------------
+
+Confira o horário e onde ocorrerá a oficina [através desse link](/programacao.html#horarios?oficina-de-leonardo).
 
 *Atenção: Vagas limitadas!* Você pode se inscrever [através desse link](https://docs.google.com/forms/d/e/1FAIpQLScbT019azyNxbmGJuQvzJjl6tw8951qM-1eXDYpiKNf15RiCw/viewform) para o formulário de inscrição.
-
-Data: *Quarta, 11 de Outubro, 8h*.
-
-Local: *UFPB/CCTA – Sala ??*.
 
 Classificação: *15 anos*.
 Limitação: *20 vagas*.

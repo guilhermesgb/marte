@@ -8,6 +8,10 @@ Um diretor é contratado por uma grande produtora para realizar a missão de sel
 
 A dramaturgia é uma autoficção baseada no livro Invenção do Nordeste e outras artes (1999), fruto da tese de doutoramento em história do paraibano Durval Muniz de Albuquerque Jr., professor da UFRN e da UFPE para quem “O Nordeste, assim como o Brasil, não são recortes naturais, políticos ou econômicos apenas, mas, principalmente, construções imagético-discursivas, constelações de sentido”. O novo espetáculo do grupo potiguar estreou em agosto e marca os dez anos do Carmin, que ganhou projeção nacional com Jacy (2013).
 
+----------------------
+
+Confira o horário e onde ocorrerá este espetáculo [através desse link](/programacao.html#horarios?carmin).
+
 Direção: *Quitéria Kelly*
 
 Consultoria intelectual: *Durval Muniz Jr.*

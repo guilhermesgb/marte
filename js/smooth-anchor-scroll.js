@@ -8,7 +8,10 @@
      * Establish events, and fix initial scroll position if a hash is provided.
      */
     init: function() {
-      this.scrollToCurrent();
+      var self = this;
+      setTimeout(function() {
+        self.scrollToCurrent(false, self);
+      }, 600);
       $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
       $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
     },
@@ -18,7 +21,24 @@
      * Modify as appropriate to allow for dynamic calculations
      */
     getFixedOffset: function() {
-      return $('.floatter').height();
+      return $('.floatter').height() + 20;
+    },
+
+    scrollAgain: function(id, pushToHistory, getFixedOffset) {
+      match = document.getElementById(id);
+
+      if(match) {
+        anchorOffset = $(match).offset().top - getFixedOffset();
+        $('html, body').animate({ scrollTop: anchorOffset});
+
+        $('.highlighted').removeClass("highlighted");
+        $('#' + $(match)[0].id).addClass("highlighted");
+
+        // Add the state to history as-per normal anchor links
+        if(HISTORY_SUPPORT && pushToHistory) {
+          history.pushState({}, document.title, location.pathname + href);
+        }
+      }
     },
 
     /**
@@ -27,22 +47,55 @@
      * @param  {String} href
      * @return {Boolean} - Was the href an anchor.
      */
-    scrollIfAnchor: function(href, pushToHistory) {
+    scrollIfAnchor: function(href, pushToHistory, self) {
       var match, anchorOffset;
 
-      if(!this.ANCHOR_REGEX.test(href)) {
+      var ANCHOR_REGEX = this.ANCHOR_REGEX;
+      if (!ANCHOR_REGEX) {
+        ANCHOR_REGEX = self.ANCHOR_REGEX;
+      }
+
+      if(!ANCHOR_REGEX.test(href)) {
         return false;
       }
 
-      match = document.getElementById(href.slice(1));
+      id = href.slice(1);
+      if (id.indexOf('?') != -1){
+        id = id.slice(0, id.length - (id.length - id.indexOf('?')))
+      }
+      match = document.getElementById(id);
 
       if(match) {
-        anchorOffset = $(match).offset().top - this.getFixedOffset();
+        var getFixedOffset = this.getFixedOffset;
+        if (!getFixedOffset) {
+          getFixedOffset = self.getFixedOffset;
+        }
+        anchorOffset = $(match).offset().top - getFixedOffset();
         $('html, body').animate({ scrollTop: anchorOffset});
 
         $('.highlighted').removeClass("highlighted");
         if ($(match)[0].id && $('#' + $(match)[0].id + ':has(img)')) {
           $('#' + $(match)[0].id + ':has(img)').addClass("highlighted");
+        }
+
+        if ($(match)[0].id === 'horarios' && _isotopeView) {
+          var scrollAgain = this.scrollAgain;
+          if (!scrollAgain) {
+            scrollAgain = self.scrollAgain;
+          }
+          var desiredId = desiredId = window.location.hash.replace("#horarios?","");
+          window.setTimeout(function(){
+            for (entry in _isotopeView.entries) {
+              entry = _isotopeView.entries[entry];
+              if (entry.id === desiredId) {
+                selectDay(parseInt(entry.date));
+                window.setTimeout(function(){
+                  scrollAgain(desiredId, true, getFixedOffset);
+                }, 400);
+              }
+            }
+          }, 600);
+          return true;
         }
 
         // Add the state to history as-per normal anchor links
@@ -57,8 +110,23 @@
     /**
      * Attempt to scroll to the current location's hash.
      */
-    scrollToCurrent: function(e) {
-      if(this.scrollIfAnchor(window.location.hash) && e) {
+    scrollToCurrent: function(e, self) {
+      var actualSelf, scrollIfAnchor;
+      if (this) {
+        actualSelf = this;
+      } else if (self) {
+        actualSelf = self;
+      } else {
+        return;
+      }
+      var scrollIfAnchor = this.scrollIfAnchor;
+      if (!scrollIfAnchor){
+        scrollIfAnchor = self.scrollIfAnchor;
+      }
+      if (!scrollIfAnchor) {
+        return;
+      }
+      if(scrollIfAnchor(window.location.hash, false, actualSelf) && e) {
       	e.preventDefault();
       }
     },
@@ -68,8 +136,7 @@
      */
     delegateAnchors: function(e) {
       var elem = e.target;
-
-      if(this.scrollIfAnchor(elem.getAttribute('href'), true)) {
+      if(this.scrollIfAnchor(elem.getAttribute('href'), true, this)) {
         e.preventDefault();
       }
     }

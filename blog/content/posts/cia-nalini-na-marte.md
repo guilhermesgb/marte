@@ -8,6 +8,10 @@ Sob as camadas de contaminações materiais que surgem de vícios e apegos por p
 
 A Nalini Cia. surge em 2011 e tem como diretora e coreógrafa uma ex-bailarina da Quasar Cia. de Dança.
 
+----------------------
+
+Confira o horário e onde ocorrerá este espetáculo [através desse link](/programacao.html#horarios?nalini).
+
 Direção e coreografia: *Valeska Gonçalves*
 
 Com: *Junior Leite*, *Thaís Natsuki* e *Valeska Gonçalves*
