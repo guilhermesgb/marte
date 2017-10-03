@@ -1,6 +1,6 @@
 ---
 title: "Cia. dos Clownssicos"
-description: "\"Clownssicos - Uma Nova Velha História de Amor\", espetáculo da Cia. dos Clownssicos, confirmado na MARTE 2017"
+description: "\"Clownssicos - uma nova velha história de amor\", espetáculo da Cia. dos Clownssicos, confirmado na MARTE 2017"
 date: "2017-10-01 19:43:00"
 ---
 
