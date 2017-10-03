@@ -24,7 +24,16 @@ img{max-width:100%;}
 /****end reset*****/
 body{
  	font-family:'Primary', Arial, Helvetica, sans-serif;
-  background: rgba(64, 65, 50, 0.5625); /*#40414699;*/
+
+  background: rgba(98, 244, 11, 1); /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,rgba(98, 244, 11, 1),rgba(48, 120, 5, 1),rgba(6, 221, 1, 1),rgba(3, 97, 0, 1),rgba(1, 250, 67, 1),rgba(250, 245, 1, 1),rgba(1, 136, 34, 1));
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,rgba(98, 244, 11, 1),rgba(48, 120, 5, 1),rgba(6, 221, 1, 1),rgba(3, 97, 0, 1),rgba(1, 250, 67, 1),rgba(250, 245, 1, 1),rgba(1, 136, 34, 1));
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,rgba(98, 244, 11, 1),rgba(48, 120, 5, 1),rgba(6, 221, 1, 1),rgba(3, 97, 0, 1),rgba(1, 250, 67, 1),rgba(250, 245, 1, 1),rgba(1, 136, 34, 1));
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(98, 244, 11, 1),rgba(48, 120, 5, 1),rgba(6, 221, 1, 1),rgba(3, 97, 0, 1),rgba(1, 250, 67, 1),rgba(250, 245, 1, 1),rgba(1, 136, 34, 1));
 }
 .wrap{
 	width:80%;
@@ -72,6 +81,14 @@ body{
   display: block;
 }
 .logo.logo_small{
+  visibility: hidden;
+  display: none;
+}
+.big-slider{
+  visibility: visible;
+  display: block;
+}
+.small-slider{
   visibility: hidden;
   display: none;
 }
@@ -1231,6 +1248,14 @@ body{
     padding-top: 15px;
     float:none;
     text-align: center;
+  }
+  .big-slider{
+    visibility: hidden;
+    display: none;
+  }
+  .small-slider{
+    visibility: visible;
+    display: block;
   }
 	.top-nav ul li a{
 		padding:25px 5px;
