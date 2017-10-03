@@ -116,8 +116,8 @@ body{
 	position:relative;
 }
 .top-nav li.active a, .top-nav li a:hover {
-	color:#FFFFFFdd;
-  text-shadow: #222 0px 2px 4px;
+	color:#404146;
+  /*text-shadow: #222 0px 2px 4px;*/
 	background-color: #62f40b; /*00B895;*/
   background-color: -webkit-linear-gradient(-180deg, #62f40b, #06DD01); /* For Safari 5.1 to 6.0 */
   background-color: -o-linear-gradient(-180deg, #62f40b, #06DD01); /* For Opera 11.1 to 12.0 */
