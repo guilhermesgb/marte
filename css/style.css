@@ -613,7 +613,7 @@ body{
 	margin-right:2%;
 }
 .footer-grid h3{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: #cbe86b;
 	text-transform: uppercase;
 	font-family: 'Accent', 'Roboto', sans-serif;
@@ -1644,6 +1644,9 @@ body{
   }
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.4em;
+  }
+  .footer-grid h3{
+  	font-size: 1em;
   }
   .content_inner .date-button-grid span a{
     font-size: 0.5em;
