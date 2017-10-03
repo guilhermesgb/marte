@@ -19,10 +19,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
-	<link href="css/style.css" rel="stylesheet" type="text/css"  media="all"/>
-	<link rel="stylesheet" href="css/responsiveslides.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/responsiveslides.min.js"></script>
+	<link href="/css/style.css" rel="stylesheet" type="text/css"  media="all"/>
+	<link rel="stylesheet" href="/css/responsiveslides.css">
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/responsiveslides.min.js"></script>
 	<script>
 	  // You can also use "$(window).load(function() {"
 	    $(function () {
@@ -36,6 +36,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
     <body>
 		<div class="overlay"></div>
+		<div class="rotating-marte-spiral fixed-in-background"><img src="/images/marte-spiral.png"/></div>
+		<div class="rotating-marte-spiral fixed-over-footer"><img src="/images/marte-spiral.png"></div>
 		<!---start-header---->
 			<div class="header floatter">
 				<div class="wrap">
@@ -192,11 +194,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 			    </div>
 			</div>
-			<div class="content_top">
+			<div class="content_top corpo_tecnico">
 				<div class="wrap">
 				<h1><a>CORPO TÉCNICO</a></h1>
-				<div class="specials">
+				<div class="corpo_tecnico_inner">
 					<div class="wrap">
+						<div class="corpo_tecnico_background"></div>
 						<div class="specials-grids corpo_tecnico_big">
 							<div class="special-grid">
 								<div class="testmonial-grid">
@@ -380,61 +383,62 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		<!---start-footer---->
 		<div class="footer">
-			<div class="wrap">
-			<div class="footer-grids">
-				<div class="footer-grid">
-					<h3>PATROCÍNIO</h3>
-					<ul>
-						<li><img src="images/caixa.png"/></li>
-						<li><img src="images/governo_federal.png"/></li>
-					</ul>
-				</div>
-				<div class="footer-grid">
-					<h3>REALIZAÇÃO</h3>
-					<ul>
-						<li><img src="images/dupla_face.png"/></li>
-						<li><img src="images/kinteto.png"/></li>
-					</ul>
-				</div>
-				<div class="footer-grid footer-lastgrid">
-					<h3>APOIOS</h3>
-					<div class="wrap">
-						<div class="footer-grids">
-							<div class="footer-grid inner-lastgrid">
-								<ul>
-									<li><img src="images/apoio5.png"/></li>
-									<li><img src="images/apoio1.png"/></li>
-									<li><img src="images/apoio4.png"/></li>
-								</ul>
+			<div class="footer-background"></div>
+			<div class="wrap" style="position:relative;">
+				<div class="footer-grids">
+					<div class="footer-grid">
+						<h3>PATROCÍNIO</h3>
+						<ul>
+							<li><img src="images/caixa.png"/></li>
+							<li><img src="images/governo_federal.png"/></li>
+						</ul>
+					</div>
+					<div class="footer-grid">
+						<h3>REALIZAÇÃO</h3>
+						<ul>
+							<li><img src="images/dupla_face.png"/></li>
+							<li><img src="images/kinteto.png"/></li>
+						</ul>
+					</div>
+					<div class="footer-grid footer-lastgrid">
+						<h3>APOIOS</h3>
+						<div class="wrap">
+							<div class="footer-grids">
+								<div class="footer-grid inner-lastgrid">
+									<ul>
+										<li><img src="images/apoio5.png"/></li>
+										<li><img src="images/apoio1.png"/></li>
+										<li><img src="images/apoio4.png"/></li>
+									</ul>
+								</div>
+								<div class="footer-grid inner-lastgrid">
+									<ul>
+										<li><img src="images/apoio7.png"/></li>
+										<li><img src="images/apoio2.png"/></li>
+										<li class="apoio_textual"><p>HE Cultural</p></li>
+										<li class="apoio_textual"><p>Lúmina Cultural</p></li>
+									</ul>
+								</div>
+								<div class="footer-grid inner-lastgrid">
+									<ul>
+										<li><img src="images/apoio6.png"/></li>
+										<li><img src="images/apoio9.png"/></li>
+										<li><img src="images/apoio3.png"/></li>
+									</ul>
+								</div>
+								<div class="footer-grid inner-lastgrid">
+									<ul>
+										<li><img src="images/apoio8.png"/></li>
+										<li><img src="images/apoio10.png"/></li>
+										<li><img src="images/apoio11.png"/></li>
+									</ul>
+								</div>
+								<div class="clear"> </div>
 							</div>
-							<div class="footer-grid inner-lastgrid">
-								<ul>
-									<li><img src="images/apoio7.png"/></li>
-									<li><img src="images/apoio2.png"/></li>
-									<li class="apoio_textual"><p>HE Cultural</p></li>
-									<li class="apoio_textual"><p>Lúmina Cultural</p></li>
-								</ul>
-							</div>
-							<div class="footer-grid inner-lastgrid">
-								<ul>
-									<li><img src="images/apoio6.png"/></li>
-									<li><img src="images/apoio9.png"/></li>
-									<li><img src="images/apoio3.png"/></li>
-								</ul>
-							</div>
-							<div class="footer-grid inner-lastgrid">
-								<ul>
-									<li><img src="images/apoio8.png"/></li>
-									<li><img src="images/apoio10.png"/></li>
-									<li><img src="images/apoio11.png"/></li>
-								</ul>
-							</div>
-							<div class="clear"> </div>
 						</div>
 					</div>
+					<div class="clear"> </div>
 				</div>
-				<div class="clear"> </div>
-			</div>
 			</div>
 		</div>
 		<!---End-footer---->
@@ -442,6 +446,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="copy-right">
 			<p>Design adaptado a partir de tema da <a href="http://w3layouts.com/">W3layouts</a>. Site escrito por <a href="http://github.com/guilhermesgb">Guilherme Santos</a></p>
 		</div>
-		<script src="js/smooth-anchor-scroll.js"></script>
+		<script src="/js/smooth-anchor-scroll.js"></script>
+		<script src="/js/rotating-marte-spiral.js"></script>
 	</body>
 </html>
