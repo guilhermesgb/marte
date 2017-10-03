@@ -142,5 +142,5 @@
     }
   };
 
-	$(document).ready($.proxy(anchorScrolls, 'init'));
+	$(window).on("load", $.proxy(anchorScrolls, 'init'));
 })(window.document, window.history, window.location);

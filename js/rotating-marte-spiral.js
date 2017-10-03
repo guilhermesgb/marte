@@ -1,4 +1,4 @@
-$(window.document).ready(function(){
+$(window).on("load", function(){
   var counter = function() {
     var counter = 1;
     return function() {

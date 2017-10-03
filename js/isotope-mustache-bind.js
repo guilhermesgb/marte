@@ -67,7 +67,7 @@ var showIsotope = function(containerId, templateId, view){
     });
 }
 
-$(window.document).ready(function(){
+$(window).on("load", function(){
     if ( typeof _isotopeRoot !== "undefined" ){
         showIsotope(_isotopeRoot, _isotopeTemplate, _isotopeView);
         window.setTimeout(function(){
