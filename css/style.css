@@ -125,8 +125,6 @@ body{
   background-color: linear-gradient(-180deg, #62f40b, #06DD01); /* Standard syntax */
 }
 /*---start-content----*/
-.content {
-}
 .content_top{
 	background:#404146; /*45B39E;*/
 	padding:50px 0;
@@ -543,39 +541,6 @@ body{
 .date-button-grid-end{
 	margin: 0px;
 }
-/*----start-testmonial-grid----*/
-.testmonials{
-	text-align:center;
-	padding:50px 0;
-}
-.testmonial-grid h3{
-	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
-	color:#323A45;
-	text-align: center;
-	text-transform: uppercase;
-	padding: 0.5em 0 0.5em 0;
-}
-.testmonial-grid p{
-	font-size: 0.875em;
-	color:#cbe86b;
-	font-family: 'Accent', Arial, Helvetica, sans-serif;
-	padding:10px 0;
-	margin:0 auto;
-	width:80%;
-	line-height: 1.8em;
-}
-.testmonial-grid h4{
-	color:#62f40b;
-	text-transform: uppercase;
-  font-family: 'Primary';
-}
-.testmonial-grid a{
-	font-size: 0.875em;
-	font-size: 1.2em;
-	font-family: 'Roboto', sans-serif;
-	color:#45B39E;
-}
 /*---start-footer-----*/
 .footer{
 	padding: 50px 0;
@@ -709,197 +674,8 @@ body{
 .copy-right p a:hover{
 	color:#62f40b;
 }
-/*---about-us----*/
-.about-us {
-	padding: 50px 0;
-}
-.about-header h5{
-	float: left;
-	width: 30%;
-	height: 1px;
-	background: #D1D1D1;
-	margin: 24px 0px 0px 0px;
-}
-.about-header h3{
-	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
-	color: #012231;
-	text-align: center;
-	text-transform: uppercase;
-	background:url(../images/bg-h2.png) repeat-x center;
-}
-.about-info a{
-	text-transform: uppercase;
-	font-size: 1.2em;
-	font-family: 'Roboto', sans-serif;
-	color:#009175;
-	transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
-	padding: 1em 0 0.5em 0;
-	display: block;
-}
-.about-info p{
-	font-size: 0.875em;
-	color: rgba(85, 81, 81, 0.84);
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.8em;
-}
-/*---start-services----*/
-.services {
-	padding: 50px 0;
-}
-.services-header h5{
-	float: left;
-	width: 40%;
-	height: 1px;
-	background: #D1D1D1;
-	margin: 24px 0px 0px 0px;
-}
-.services-header h3{
-	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
-	color: #012231;
-	text-align: center;
-	text-transform: uppercase;
-	padding: 0 0 0.5em 0;
-	background:url(../images/bg-h2.png) repeat-x center;
-}
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1;
-}
-.listview_1_of_2{
-	display: block;
-	float:left;
-	margin: 0% 0 4% 0%;
-}
-.grid2{
-	border-top: 1px solid rgba(192, 192, 192, 0.39);
-}
-.listimg{
-	display: block;
-	float:left;
-}
-.text{
-	display: block;
-	float:left;
-	margin: 0% 0 0% 3.6%;
-}
-.listview_1_of_2:first-child { margin-left: 0;}
-
-.images_1_of_2 {
-	width: 46.96%;
-	padding:1.5%;
-}
-.listimg_2_of_1 {
-	width: 18.2%;
-}
-.list_2_of_1 {
-	width: 70.2%;
-}
-.images_1_of_2  img {
-	max-width:100%;
-	display:block;
-	padding-top: 25px;
-}
-.list_2_of_1  h3{
-	font-family: 'Roboto', sans-serif;
-	font-size:1.6em;
-	color: #626262;
-	text-transform:uppercase;
-	text-align: left;
-}
-.list_2_of_1 h3 span{
-	color:#00B895;
-}
-.list_2_of_1  p{
-	font-size:0.85em;
-	color:#949191;
-	line-height:1.8em;
-	margin: 0px 0px 16px 0px;
-	font-family:Arial, Helvetica, sans-serif;
-}
-.list_2_of_1 h4{
-	color:#A8A8A8;
-	font-size:1.2em;
-	font-family:Arial, Helvetica, sans-serif;
-	padding: 5px 0px;
-}
-/*---plans-404page-----*/
-.error-page{
-	text-align:center;
-}
-.error-page p{
-	font-family: 'Roboto', sans-serif;
-	font-size: 4em;
-	color: #012231;
-	text-shadow: -2px 3px 4px #9B9B9B;
-}
-.error-page h3{
-	font-family: 'Roboto', sans-serif;
-	font-size: 10em;
-	color:#00B895;
-	text-shadow: -2px 3px 4px #9B9B9B;
-}
-.error-page {
-	padding: 200px 0px 0 0;
-	min-height: 450px;
-}
 /*---start-contact----*/
 /*  Contact Form  ============================================================================= */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1;
-}
-.col{
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child{
-	margin-left:0;
-}
-.span_2_of_3 {
-	width: 63.1%;
-	padding:1.5%;
-}
-.span_1_of_3 {
-	width: 29.2%;
-	padding:1.5%;
-}
-.span_2_of_3  h3,
-.span_1_of_3  h3 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
-	padding: 0.5em 0;
-	color: #012231;
-	text-transform: uppercase;
-}
 .contact-form{
 	position:relative;
 	padding-top:30px;
@@ -1316,10 +1092,6 @@ body{
 	.grid{
 		width:26.8%;
 	}
-	.span_2_of_3 {
-		width:94%;
-		padding:3%;
-	}
 	.footer{
 		padding:0;
 	}
@@ -1329,13 +1101,6 @@ body{
   .footer-grid.inner-lastgrid ul li.apoio_textual p{
     font-size:0.4em;
   }
-	.col{
-		margin: 1% 0 1% 0%;
-	}
-	.span_1_of_3 {
-		width:94%;
-		padding:3%;
-	}
   .content_inner .date-button-grid span a{
     font-size: 0.6em;
     padding-left: 8px;
@@ -1428,39 +1193,11 @@ body{
   .date-button-grids {
   	padding-top: 2px 0;
   }
-	.testmonials{
-		padding:0 0 30px 0;
-	}
 	.footer-grid:not(.inner-lastgrid){
 		float:none;
 		width:94%;
 		padding:3%;
 		margin-right:0;
-	}
-	.services{
-		padding:20px 0;
-	}
-	.images_1_of_2{
-		width:94%;
-		padding:3%;
-	}
-	.span_2_of_3 {
-		width:94%;
-		padding:3%;
-	}
-	.list_2_of_1{
-	  width:78.2%;
-	}
-	.error-page{
-		padding:20px 0;
-		min-height:0;
-	}
-	.col{
-		margin: 1% 0 1% 0%;
-	}
-	.span_1_of_3 {
-		width:94%;
-		padding:3%;
 	}
   .contact-form input[type="email"],.contact-form textarea{
 		width:97%;
@@ -1532,10 +1269,6 @@ body{
     visibility: visible;
     display: block;
   }
-	.span_2_of_3 {
-		width:90%;
-		padding:5%;
-	}
 	.top-nav{
 		float:none;
 		text-align:center;
@@ -1548,22 +1281,6 @@ body{
 	}
 	.content-grids,.about-us{
 		padding:20px 0;
-	}
-	.testmonial-grid p{
-		width:100%;
-	}
-	.error-page p{
-		font-size:2em;
-	}
-	.error-page h3{
-		font-size:6em;
-	}
-	.col {
-		margin:0;
-	}
-	.span_1_of_3 {
-		width:90%;
-		padding:5%;
 	}
 	.contact-form input[type="email"],.contact-form textarea{
 		width:92%;
@@ -1625,19 +1342,6 @@ body{
 	}
 	.special-grid p{
 		padding:0;
-	}
-	.testmonial-grid h3{
-		font-size:1.5em;
-		padding:5px 0;
-	}
-	.testmonial-grid p{
-		padding:0;
-	}
-	.about-info a{
-		font-size:0.8em;
-	}
-	.list_2_of_1 h3{
-		font-size:1.3em;
 	}
   .copy-right p{
   	font-size: 0.50em;
