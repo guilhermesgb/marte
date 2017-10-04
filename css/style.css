@@ -401,7 +401,7 @@ body{
 	color:#cbe86b;
 	text-align: center;
 	text-transform: uppercase;
-	background:url(../images/bg-h2.png) repeat-x center;
+	background:url(../images/bg-h2.png.webp) repeat-x center;
   z-index:750;
   position:relative;
 }
@@ -541,6 +541,38 @@ body{
 .date-button-grid-end{
 	margin: 0px;
 }
+.testmonials{
+	text-align:center;
+	padding:50px 0;
+}
+.testmonial-grid h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	color:#323A45;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0.5em 0 0.5em 0;
+}
+.testmonial-grid p{
+	font-size: 0.875em;
+	color:#cbe86b;
+	font-family: 'Accent', Arial, Helvetica, sans-serif;
+	padding:10px 0;
+	margin:0 auto;
+	width:80%;
+	line-height: 1.8em;
+}
+.testmonial-grid h4{
+	color:#62f40b;
+	text-transform: uppercase;
+  font-family: 'Primary';
+}
+.testmonial-grid a{
+	font-size: 0.875em;
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	color:#45B39E;
+}
 /*---start-footer-----*/
 .footer{
 	padding: 50px 0;
@@ -651,7 +683,7 @@ body{
 .copy-right{
 	text-align:center;
 	padding:1em;
-	background: url("../images/background.jpg");
+	background: #222;
   z-index:750;
   position: relative;
 }
@@ -1193,6 +1225,9 @@ body{
   .date-button-grids {
   	padding-top: 2px 0;
   }
+  .testmonials{
+    padding:0 0 30px 0;
+  }
 	.footer-grid:not(.inner-lastgrid){
 		float:none;
 		width:94%;
@@ -1279,9 +1314,12 @@ body{
 	.top-nav ul li a{
 		padding:15px 10px;
 	}
-	.content-grids,.about-us{
+	.content-grids{
 		padding:20px 0;
 	}
+  .testmonial-grid p{
+  	width:100%;
+  }
 	.contact-form input[type="email"],.contact-form textarea{
 		width:92%;
     font-size: 0.6em;
@@ -1343,6 +1381,19 @@ body{
 	.special-grid p{
 		padding:0;
 	}
+  .testmonial-grid h3{
+  	font-size:1.5em;
+  	padding:5px 0;
+  }
+  .testmonial-grid p{
+  	padding:0;
+  }
+  .about-info a{
+  	font-size:0.8em;
+  }
+  .list_2_of_1 h3{
+  	font-size:1.3em;
+  }
   .copy-right p{
   	font-size: 0.50em;
   }
