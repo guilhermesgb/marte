@@ -629,7 +629,6 @@ body{
 .footer-grid ul li a{
 	display:block;
 	padding:10px 0px;
-	border-bottom: 1px solid #62f40b; /*5AC5B1;*/
 	font-size: 0.875em;
 	color:#cbe86b;
 	font-family: 'Primary', Arial, Helvetica, sans-serif;
